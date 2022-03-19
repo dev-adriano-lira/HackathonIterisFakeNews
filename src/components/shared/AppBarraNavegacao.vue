@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden">
     <v-bottom-navigation :value="value" 
-    background-color="grey lighten-4" 
+    background-color="grey lighten-3" 
     
     app grow>
       
