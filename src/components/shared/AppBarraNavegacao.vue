@@ -5,7 +5,7 @@
     
     app grow>
       
-
+    <v-row align="center"  direction="center" justify="space-between">
       <router-link to="/">
       <v-btn depressed  large plain align="center" justify="space-around">
         <span>Início</span>
@@ -27,7 +27,7 @@
         <v-icon>mdi-message-text-outline</v-icon>
       </v-btn>
       </router-link>
-
+    </v-row>
       
 
     </v-bottom-navigation>
