@@ -7,7 +7,9 @@
       scroll-target="#scrolling-techniques-7">
       
       <v-toolbar-title>
-        <v-img class="imagem mb-1" src="../../assets/logo.png"></v-img>
+        <router-link to="/">
+          <v-btn><v-img class="imagem mb-1" src="../../assets/logo.png"></v-img></v-btn>
+        </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
 
