@@ -1,15 +1,15 @@
 <template>
   <div class="sitesList mt-3">
 
-    <v-card
+    <v-card  elevation="15"
       v-for="site of listaSites"
       :key="site.id"
       class="mx-auto mb-3"
-      max-width="350"
+      max-width="344"
     >
       <div>
         <a :href="site.site">
-          <v-img :src="site.imagem" alt="site.nome"></v-img>
+          <v-img :src="site.imagem" alt="site.nome" class="rounded-lg"></v-img>
         </a>
       </div>
       <v-card-title>
@@ -22,27 +22,15 @@
         </span>
       </v-card-subtitle>
 
-      <v-card-actions>
+      <v-divider></v-divider>
+
+      <v-card-text>
+        <p>
+          {{ site.descricao }}
+        </p>
         <v-btn class="botao-saibaMais" color="white" text> Saiba Mais </v-btn>
-
-        <v-spacer></v-spacer>
-
-        <v-btn icon @click="show = !show">
-          <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
-        </v-btn>
-      </v-card-actions>
-
-      <v-expand-transition>
-        <div v-show="show">
-          <v-divider></v-divider>
-
-          <v-card-text>
-            <p>
-              {{ site.descricao }}
-            </p>
-          </v-card-text>
-        </div>
-      </v-expand-transition>
+      </v-card-text>
+        
     </v-card>
   </div>
 </template>
@@ -67,6 +55,10 @@ export default {
 </script>
 
 <style scoped>
+
+  .v-main {
+    background-color: black;
+  }
   
   .botao-saibaMais {
     background-color: black
