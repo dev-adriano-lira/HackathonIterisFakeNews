@@ -1,10 +1,11 @@
 <template>
-  <div class="sitesList">
+  <div class="sitesList mt-3">
+
     <v-card
       v-for="site of listaSites"
       :key="site.id"
-      class="mx-auto"
-      max-width="344"
+      class="mx-auto mb-3"
+      max-width="350"
     >
       <div>
         <a :href="site.site">
@@ -22,7 +23,7 @@
       </v-card-subtitle>
 
       <v-card-actions>
-        <v-btn color="orange lighten-2" text> Explore </v-btn>
+        <v-btn class="botao-saibaMais" color="white" text> Saiba Mais </v-btn>
 
         <v-spacer></v-spacer>
 
@@ -60,14 +61,20 @@ export default {
       .then((resposta) => resposta.json())
       .then((json) => {
         this.listaSites = json;
-        console.log(this.listaSites);
       });
   },
 };
 </script>
 
 <style scoped>
-p {
-  text-align: justify;
-}
+  
+  .botao-saibaMais {
+    background-color: black
+  }
+  
+  p {
+    text-align: justify;
+  }
+
+
 </style>
