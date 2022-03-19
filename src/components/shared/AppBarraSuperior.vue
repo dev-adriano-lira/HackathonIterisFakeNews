@@ -2,12 +2,13 @@
 <v-card class="overflow-hidden">
     <v-app-bar
       absolute
-      color="white"
+      color="gray"
       elevate-on-scroll
-      scroll-target="#scrolling-techniques-7"
-    >
-      <v-app-bar-nav-icon><v-icon>src="logo"</v-icon></v-app-bar-nav-icon>
-
+      scroll-target="#scrolling-techniques-7">
+      
+      <v-toolbar-title>
+        <v-img src="../../assets/logo.png"></v-img>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
 
     </v-app-bar>
@@ -16,7 +17,7 @@
       class="overflow-y-auto"
       max-height="600"
     >
-      <v-container style="height: 1500px;">
+      <v-container style="height: 50px;">
       </v-container>
     </v-sheet>
   </v-card>
@@ -24,10 +25,9 @@
 
 <script>
 export default {
-    setup() {
-        
-    },
-}
+    name: 'AppBarraSuperior'
+
+};
 </script>
 
 <style scoped>

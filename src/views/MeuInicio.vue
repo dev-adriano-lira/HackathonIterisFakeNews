@@ -1,12 +1,11 @@
 <template>
   <div class="sitesList">
-    <h1>Sites</h1>
     <ul>
       <li v-for="site of listaSites" :key="site.id">
         <h3>{{ site.nome }}</h3>
-        <img :src="site.imagem" :alt="site.nome"/>
+        <a :href="site.site"><img :src="site.imagem" alt="site.nome" /></a>
         <p>
-          <strong>{{ site.descricao }}</strong>
+          {{ site.descricao }}
         </p>
         <span> {{ site.ferramentas }}</span>
       </li>
