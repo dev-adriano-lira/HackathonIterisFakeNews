@@ -70,7 +70,7 @@
           outlined
           name="input-7-4"
           label="Cole aqui a notícia* (obrigatório)"
-          value="."
+          value=" "
         ></v-textarea>
       </v-col>
     </v-row>
@@ -80,8 +80,10 @@
       rounded
       color="primary"
       dark
+      
     >
-      Enviar
+    Enviar
+      
     </v-btn>
   </div>
       </v-card>
