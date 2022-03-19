@@ -2,7 +2,7 @@
 <v-card class="overflow-hidden">
     <v-app-bar class="pl-1"
       absolute
-      color="gray"
+      color="grey lighten-3"
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7">
       
