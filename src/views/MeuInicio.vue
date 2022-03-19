@@ -1,21 +1,48 @@
 <template>
   <div class="sitesList">
-    <ul>
-      <li v-for="site of listaSites" :key="site.id">
-        <h3 class="mt-3">{{ site.nome }}</h3>
-        <div>
-          <a :href="site.site">
-            <v-img :src="site.imagem" alt="site.nome" class="mb-3"></v-img>
-          </a>
-          <span v-for="ferramenta of site.ferramentas" :key="ferramenta.id">
-            {{ ferramenta }};</span
-          >
+    <v-card
+      v-for="site of listaSites"
+      :key="site.id"
+      class="mx-auto"
+      max-width="344"
+    >
+      <div>
+        <a :href="site.site">
+          <v-img :src="site.imagem" alt="site.nome"></v-img>
+        </a>
+      </div>
+      <v-card-title>
+        <h3>{{ site.nome }}</h3>
+      </v-card-title>
+
+      <v-card-subtitle>
+        <span v-for="ferramenta of site.ferramentas" :key="ferramenta.id">
+          {{ ferramenta }};
+        </span>
+      </v-card-subtitle>
+
+      <v-card-actions>
+        <v-btn color="orange lighten-2" text> Explore </v-btn>
+
+        <v-spacer></v-spacer>
+
+        <v-btn icon @click="show = !show">
+          <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
+        </v-btn>
+      </v-card-actions>
+
+      <v-expand-transition>
+        <div v-show="show">
+          <v-divider></v-divider>
+
+          <v-card-text>
+            <p>
+              {{ site.descricao }}
+            </p>
+          </v-card-text>
         </div>
-        <p class="mr-5">
-          {{ site.descricao }}
-        </p>
-      </li>
-    </ul>
+      </v-expand-transition>
+    </v-card>
   </div>
 </template>
 
@@ -25,6 +52,7 @@ export default {
   data() {
     return {
       listaSites: [],
+      show: false,
     };
   },
   created() {

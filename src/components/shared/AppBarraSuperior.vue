@@ -7,7 +7,7 @@
       scroll-target="#scrolling-techniques-7">
       
       <v-toolbar-title>
-        <v-img src="../../assets/logo.png"></v-img>
+        <v-img size="24" src="../../assets/logo.png"></v-img>
       </v-toolbar-title>
       <v-spacer></v-spacer>
 
