@@ -1,7 +1,4 @@
 <template>
-  <<<<<<< HEAD
-  <h1>Olá!</h1>
-  =======
   <div class="sitesList">
     <ul>
       <li v-for="site of listaSites" :key="site.id">
