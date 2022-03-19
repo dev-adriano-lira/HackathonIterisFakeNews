@@ -1,99 +1,37 @@
 <template>
   <div class="caixa-sugestoes">
     <h2>
-      Sugestões
+      Sugestões de checagem
     </h2>
-    <p>Recebeu uma notícia pelo 'zap' e não sabe se ela é confiável? Envie sua sugestão para as agências de checagem parceiras</p>
-    <v-container>
-      <validation-observer
-    ref="observer"
-    v-slot="{ invalid }"
-  >
-    <form @submit.prevent="submit">
-      <validation-provider
-        v-slot="{ errors }"
-        name="Name"
-        rules="required|max:10"
+    <p>Você também pode ajudar no combate à desinformação. Recebeu uma notícia pelo 'zap' e não sabe se ela é confiável? Copie o texto da notícia, cole na caixa abaixo e clique em "Enviar". Sua mensagem será enviada para as agências de checagem parceiras.</p>
+    <v-container fluid>
+    <v-textarea
+      autocomplete="email"
+      label="Digite seu nome (opcional)"
+    ></v-textarea>
+  </v-container>
+    
+    <v-container fluid>
+    <v-textarea
+      autocomplete="email"
+      label="Digite seu e-mail (opcional)"
+    ></v-textarea>
+    <v-container fluid>
+    <v-row>
+      <v-col
+        cols="12"
+        md="6"
       >
-        <v-text-field
-          v-model="name"
-          :counter="10"
-          :error-messages="errors"
-          label="Name"
-          required
-        ></v-text-field>
-      </validation-provider>
-      <validation-provider
-        v-slot="{ errors }"
-        name="phoneNumber"
-        :rules="{
-          required: true,
-          digits: 7,
-          regex: '^(71|72|74|76|81|82|84|85|86|87|88|89)\\d{5}$'
-        }"
-      >
-        <v-text-field
-          v-model="phoneNumber"
-          :counter="7"
-          :error-messages="errors"
-          label="Phone Number"
-          required
-        ></v-text-field>
-      </validation-provider>
-      <validation-provider
-        v-slot="{ errors }"
-        name="email"
-        rules="required|email"
-      >
-        <v-text-field
-          v-model="email"
-          :error-messages="errors"
-          label="E-mail"
-          required
-        ></v-text-field>
-      </validation-provider>
-      <validation-provider
-        v-slot="{ errors }"
-        name="select"
-        rules="required"
-      >
-        <v-select
-          v-model="select"
-          :items="items"
-          :error-messages="errors"
-          label="Select"
-          data-vv-name="select"
-          required
-        ></v-select>
-      </validation-provider>
-      <validation-provider
-        v-slot="{ errors }"
-        rules="required"
-        name="checkbox"
-      >
-        <v-checkbox
-          v-model="checkbox"
-          :error-messages="errors"
-          value="1"
-          label="Option"
-          type="checkbox"
-          required
-        ></v-checkbox>
-      </validation-provider>
-
-      <v-btn
-        class="mr-4"
-        type="submit"
-        :disabled="invalid"
-      >
-        submit
-      </v-btn>
-      <v-btn @click="clear">
-        clear
-      </v-btn>
-    </form>
-  </validation-observer>
-    </v-container>
+        <v-textarea
+          outlined
+          name="input-7-4"
+          label="Cole aqui a notícia (*obrigatório)"
+          value="."
+        ></v-textarea>
+      </v-col>
+    </v-row>
+  </v-container>
+  </v-container>
 
   </div>
 </template>
