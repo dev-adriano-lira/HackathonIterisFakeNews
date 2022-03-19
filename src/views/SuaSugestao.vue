@@ -1,7 +1,9 @@
 <template>
   <div class="caixa-sugestoes mt-3">
       <v-card
-        class="d-center-flex  pa-2"
+        
+        elevation="2"
+        class="d-center-flex pa-2 rounded-lg"
         outlined
         tile
       >
@@ -9,19 +11,32 @@
   </v-card>
   <br>
       <v-card
-        class="d-flex pa-2"
-        outlined
-        tile
+       
+       elevation="2"
+       class="d-center-flex pa-2 rounded-lg"
+       outlined
+       tile
+
         >
         <p class="text-center"> <strong>Você também pode ajudar no combate à desinformação!</strong>  Recebeu uma notícia pelo 'zap' e não sabe se ela é confiável? Copie o texto da notícia, cole na caixa abaixo e clique em "Enviar". Sua mensagem será enviada para as agências de checagem parceiras
         </p>
         </v-card>    
   
+   
+      <v-card
+       
+       elevation="2"
+        class="d-center-flex pa-2 rounded-lg mt-6"
+        outlined
+        tile
+        
+        >
     <v-container>
       <v-row>
         <v-col
           cols="12"
           sm="6"
+          
         >
           <v-text-field
             v-model="first"
@@ -58,7 +73,6 @@
       </v-col>
     </v-row>
   </v-container>
-
   <div class="text-center">
     <v-btn
       rounded
@@ -68,6 +82,9 @@
       Enviar
     </v-btn>
   </div>
+      </v-card>
+
+  
 
   </div>
 </template>
