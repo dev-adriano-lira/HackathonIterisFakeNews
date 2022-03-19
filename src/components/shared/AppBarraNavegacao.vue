@@ -5,7 +5,7 @@
     
     app grow>
       
-    <v-row align="center"  direction="center" justify="space-between">
+    <v-row align="center"  direction="center" justify="space-around">
       <router-link to="/">
       <v-btn depressed  large plain align="center" justify="space-around">
         <span>Início</span>
