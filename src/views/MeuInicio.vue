@@ -1,7 +1,7 @@
 <template>
   <div class="sitesList mt-3">
-
-    <v-card  elevation="15"
+    <v-card
+      elevation="15"
       v-for="site of listaSites"
       :key="site.id"
       class="mx-auto mb-3"
@@ -28,9 +28,16 @@
         <p>
           {{ site.descricao }}
         </p>
-        <v-btn class="botao-saibaMais" color="white" text> Saiba Mais </v-btn>
+        <v-btn
+          :href="site.site"
+          target="_blank"
+          class="botao-saibaMais"
+          color="white"
+          text
+        >
+          Saiba Mais
+        </v-btn>
       </v-card-text>
-        
     </v-card>
   </div>
 </template>
@@ -55,18 +62,15 @@ export default {
 </script>
 
 <style scoped>
+.v-main {
+  background-color: black;
+}
 
-  .v-main {
-    background-color: black;
-  }
-  
-  .botao-saibaMais {
-    background-color: black
-  }
-  
-  p {
-    text-align: justify;
-  }
+.botao-saibaMais {
+  background-color: black;
+}
 
-
+p {
+  text-align: justify;
+}
 </style>
