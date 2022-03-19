@@ -1,7 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <h1>Olá!</h1>
-=======
   <div class="sitesList">
     <h1>Sites</h1>
     <ul>
@@ -14,7 +11,6 @@
       </li>
     </ul>
   </div>
->>>>>>> f134debdc1c42a88b8b5933849cf0cb14da054cf
 </template>
 
 <script>

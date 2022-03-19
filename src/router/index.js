@@ -14,7 +14,7 @@ const routes = [
     component: MeuInicio
   },
   {
-    path: '/aboutview',
+    path: '/sobrenos',
     name: 'AboutView',
     component: AboutView
   },

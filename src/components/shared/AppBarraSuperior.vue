@@ -1,13 +1,13 @@
 <template>
 <v-card class="overflow-hidden">
-    <v-app-bar
+    <v-app-bar class="pl-1"
       absolute
       color="gray"
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7">
       
       <v-toolbar-title>
-        <v-img src="../../assets/logo.png"></v-img>
+        <v-img class="imagem mb-1" src="../../assets/logo.png"></v-img>
       </v-toolbar-title>
       <v-spacer></v-spacer>
 
@@ -31,5 +31,13 @@ export default {
 </script>
 
 <style scoped>
+ .app-bottom-bar a {
+    text-decoration: none;
+ }
 
+ .imagem {
+   width: 125px;
+   margin-left: 1px;
+  
+ }
 </style>
