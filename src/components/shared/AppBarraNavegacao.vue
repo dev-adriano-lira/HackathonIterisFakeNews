@@ -13,10 +13,17 @@
       <router-link to="/suasugestao">
       <v-btn depressed elevation="3" large plain align="center" justify="space-around">
         <span>Sugestões</span>
-
         <v-icon>mdi-message-text-outline</v-icon>
       </v-btn>
       </router-link>
+
+      <router-link to="/">
+      <v-btn depressed elevation="3" large plain align="center" justify="space-around">
+        <span>Início</span>
+        <v-icon>mdi-home-circle-outline</v-icon>
+      </v-btn>
+      </router-link>
+
     </v-bottom-navigation>
   </div>
 </template>
