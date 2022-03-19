@@ -15,7 +15,7 @@
       <v-card
 
         elevation="2"
-        class="d-flex  pa-2 rounded-lg "
+        class="d-center-flex  pa-2 rounded-lg "
         outlined
         tile
         >
