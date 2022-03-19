@@ -1,6 +1,9 @@
 <template>
   <div class="overflow-hidden">
-    <v-bottom-navigation :value="value" background-color="gray" app grow>
+    <v-bottom-navigation :value="value" 
+    background-color="grey lighten-4" 
+    
+    app grow>
       
 
       <router-link to="/">
