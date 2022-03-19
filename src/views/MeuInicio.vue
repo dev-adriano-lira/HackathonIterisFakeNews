@@ -1,9 +1,21 @@
 <template>
-  <h1></h1>
+  <div class="sitesList">
+    <h1>Sites</h1>
+    <ul>
+      <li>
+        <h3>{{ listaSites.nome }}</h3>
+        <img src="listaSites.imagem" alt="listaSites.nome" />
+        <p>
+          <strong>{{ listaSites.descricao }}</strong>
+        </p>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
 export default {
+<<<<<<< Updated upstream
     name: 'MeuInicio',
 
     data() {
@@ -19,5 +31,8 @@ export default {
         console.log(this.listaSites)
       })
     }
+=======
+  name: "MeuInicio",
+>>>>>>> Stashed changes
 };
 </script>
