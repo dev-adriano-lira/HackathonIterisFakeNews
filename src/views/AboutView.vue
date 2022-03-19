@@ -2,16 +2,20 @@
   <div class="about">
     <v-container>
       <v-card
-        class="d-center-flex  pa-2"
+        
+        elevation="2"
+        class="d-center-flex pa-2 rounded-lg"
         outlined
         tile
       >
       <h2 class="text-h5 text-center "> <b>Sobre o "Fake Inspect" </b> </h2>
-  </v-card>
+      </v-card>
+      <p></p>
       
-      <br>
       <v-card
-        class="d-flex pa-2"
+
+        elevation="2"
+        class="d-flex  pa-2 rounded-lg "
         outlined
         tile
         >
@@ -20,8 +24,16 @@
         </v-card>
 
 
-      
-      <div class="CorpoEquipe">
+      <br>
+      <v-card
+
+        elevation="2"
+        class="d-flex pa-3 rounded-lg "
+        outlined
+        tile
+        >
+
+        <div class="CorpoEquipe">
 
 
         <h3 class="py-3"> <b>Corpo da equipe: </b></h3>
@@ -91,19 +103,16 @@
           <a href="https://github.com/RodrigoModesto33" class="pl-6">  @RodrigoModesto33</a>
           </span>
         </v-row>
-
-
-
-
+        </div>
         
+        </v-card>
 
 
-        
-        
-        
 
 
-      </div>
+
+
+     
     </v-container>
   </div>
 </template>
@@ -116,5 +125,6 @@
 </script>
 
 <style scoped>
+
 
 </style>
